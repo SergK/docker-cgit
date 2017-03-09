@@ -1,0 +1,18 @@
+#
+# cgit config
+#
+
+css=/cgit.css
+logo=/cgit.png
+
+# if you do not want that webcrawler (like google) index your site
+robots=noindex, nofollow
+
+# if cgit messes up links, use a virtual-root. For example has cgit.example.org/ this value:
+virtual-root=/
+
+# source-filter should be specified before scan-path, otherwise it will have no effect.
+source-filter=/usr/lib/cgit/filters/cgit-syntax-highlighting.sh
+about-filter=/usr/lib/cgit/filters/about-formatting.sh
+
+scan-path=/var/lib/git/
