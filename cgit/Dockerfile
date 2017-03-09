@@ -17,4 +17,6 @@ COPY cgit-syntax-highlighting.sh /usr/lib/cgit/filters/cgit-syntax-highlighting.
 
 COPY cgit.ini /etc/uwsgi/apps-available/cgit.ini
 
+USER cgit
+
 CMD /usr/bin/uwsgi --ini /etc/uwsgi/apps-available/cgit.ini
